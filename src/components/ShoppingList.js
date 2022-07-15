@@ -12,3 +12,6 @@ function ShoppingList({ items }) {
 
     });
     return (
+      <div className="ShoppingList">
+        
+      </div>
