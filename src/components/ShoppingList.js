@@ -6,3 +6,4 @@ function ShoppingList({ items }) {
     function handleCategory(event){
       setSelectCategory(event.target.value);
     }
+    const itemToDisplay=items.filter((item)=>{
