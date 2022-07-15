@@ -8,3 +8,7 @@ function ShoppingList({ items }) {
     }
     const itemToDisplay=items.filter((item)=>{
       if(selectCategory === "All")return true;
+      return item.category === selectCategory;
+
+    });
+    return (
