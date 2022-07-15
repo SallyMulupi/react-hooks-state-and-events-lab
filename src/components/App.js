@@ -12,7 +12,7 @@ function App() {
     <div className={appClass}>
       <header>
         <h2>Shopster</h2>
-        <button>Dark Mode</button>
+        <button onClick={()=> setDarkMode(!darkMode)}>{darkMode? "Dark Mode" : "Light Mode"}</button>
       </header>
       <ShoppingList items={itemData} />
     </div>
