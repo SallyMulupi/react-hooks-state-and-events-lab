@@ -7,3 +7,4 @@ function ShoppingList({ items }) {
       setSelectCategory(event.target.value);
     }
     const itemToDisplay=items.filter((item)=>{
+      if(selectCategory === "All")return true;
