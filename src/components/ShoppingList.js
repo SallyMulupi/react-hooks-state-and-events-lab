@@ -19,5 +19,17 @@ function ShoppingList({ items }) {
         <option value="Produce">Produce</option>
         <option value="Dairy">Dairy</option>
         <option value="Dessert">Dessert</option>
-        </div>
+        </select>
       </div>
+      <ul className="Items">
+        {itemToDisplay.map((item) => (
+          <Item key={item.id} name={item.name} category={item.category} />
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default ShoppingList;
+        
+    
